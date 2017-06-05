@@ -72,7 +72,7 @@ public class EventsRestControllerTest {
         cmd.setCollectionId(UUID.randomUUID().toString());
         cmd.setEvent(generateEventDTO());
         mvc.perform(
-                post("/collection/add")
+                post("/collection/event")
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(mapper.writeValueAsString(cmd)))

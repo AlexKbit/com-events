@@ -19,7 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("collection")
-@Api(basePath = "/collection", value = "event", description = "Operations with events", produces = "application/json")
+@Api(basePath = "/collection", value = "collection", description = "Operations with events", produces = "application/json")
 public class EventsRestController extends RESTController<Event, EventDTO> {
 
     @Autowired

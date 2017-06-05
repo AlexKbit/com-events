@@ -1,0 +1,10 @@
+server:
+    port: ${PORT:8082}
+spring:
+  application:
+      name: events
+      date: '@build.date@'
+      version: '@build.version@'
+  profiles.active: inttest
+logging:
+    config: classpath:logback.xml

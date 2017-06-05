@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "com.example.rest.CmdCreateEvent_v1",
+  "title": "Create new event",
+  "type": "object",
+  "properties": {
+    "collectionId": {
+      "type": "string",
+      "description": "Id of collection"
+    },
+    "event": {
+      "$ref": "EventDTO.json"
+    }
+  },
+  "required": [
+    "collectionId",
+    "event"
+  ]
+}

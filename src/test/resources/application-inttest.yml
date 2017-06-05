@@ -1,0 +1,5 @@
+spring:
+  profiles: inttest
+  data:
+    mongodb:
+      uri: mongodb://localhost:10000/events

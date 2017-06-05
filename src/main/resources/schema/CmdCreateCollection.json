@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "com.example.rest.CmdCreateCollection_v1",
+  "title": "Create new collection",
+  "type": "object",
+  "properties": {
+    "collectionId": {
+      "type": "string",
+      "description": "Id of collection"
+    }
+  },
+  "required": [
+    "collectionId"
+  ]
+}

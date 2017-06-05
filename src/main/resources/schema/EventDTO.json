@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "com.example.rest.EventDTO_v1",
+  "title": "EventDTO",
+  "type": "object",
+  "javaType": "com.example.rest.events.dto.EventDTO",
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "description": "Id of event"
+    },
+    "timestamp": {
+      "type": "date-time",
+      "description": "Timestamp of registration"
+    },
+    "executeTimestamp": {
+      "type": "date-time",
+      "description": "Timestamp of execute"
+    },
+    "userId": {
+      "type": "string",
+      "description": "Id of user"
+    },
+    "content": {
+      "type": "string",
+      "description": "Content of event"
+    }
+  },
+  "required": [
+    "eventId",
+    "timestamp",
+    "executeTimestamp",
+    "userId",
+    "content"
+  ]
+}
